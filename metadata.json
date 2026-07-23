@@ -1,0 +1,6 @@
+{
+  "name": "calciDon",
+  "description": "A feature-packed basic and scientific calculator app with history tracking, customizable constants, unit conversion, memory functions, and intuitive theme customization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
