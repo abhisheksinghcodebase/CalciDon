@@ -5,6 +5,7 @@
 [![Jetpack Compose](https://img.shields.io/badge/UI-Jetpack%20Compose%20%7C%20Material%203-4285F4?logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
 [![Gradle](https://img.shields.io/badge/Gradle-9.3.1-02303A?logo=gradle&logoColor=white)](https://gradle.org)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Download APK](https://img.shields.io/badge/Download-CalciDon.apk-3DDC84?logo=android&logoColor=white)](https://github.com/abhisheksinghcodebase/CalciDon/raw/main/CalciDon.apk)
 
 **CalciDon** is a modern, feature-packed, and beautifully designed Android calculation suite built with **Jetpack Compose** and **Material 3**. Engineered for performance, clarity, and precision, CalciDon blends a high-precision scientific calculator, an interactive formula reference & quadratic equation solver, an extensive multi-category unit converter, and persistent calculation history with favorites.
 
@@ -81,14 +82,64 @@ CalciDon/
 
 ---
 
-## 🚀 Getting Started & Installation
+## 📥 Download & Installation
 
-### Prerequisites
+### 📱 Option 1: Direct APK Download (Recommended for Mobile)
+
+You can download and install the pre-compiled Android APK directly from GitHub on your phone without needing Android Studio or Gradle:
+
+<div align="center">
+
+[![Download CalciDon APK](https://img.shields.io/badge/⬇️%20Download-CalciDon.apk-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/abhisheksinghcodebase/CalciDon/raw/main/CalciDon.apk)
+
+👉 **[Direct Download Link (CalciDon.apk)](https://github.com/abhisheksinghcodebase/CalciDon/raw/main/CalciDon.apk)** &bull; **[Browse in Repository](CalciDon.apk)**
+
+</div>
+
+#### 📋 APK Specification
+| Property | Value |
+| :--- | :--- |
+| **Package File** | [`CalciDon.apk`](CalciDon.apk) |
+| **Direct Download** | [Click to Download APK](https://github.com/abhisheksinghcodebase/CalciDon/raw/main/CalciDon.apk) |
+| **Minimum OS** | Android 7.0 (API Level 24 - Nougat) |
+| **Target OS** | Android 16 (API Level 36) |
+| **Package Name** | `com.aistudio.calcidon.xklpqr` |
+| **Architecture** | Universal (ARM64, ARMv7, x86, x86_64) |
+
+#### 📲 Step-by-Step Android Installation Guide
+1. **Download**: Tap the [Download CalciDon.apk](https://github.com/abhisheksinghcodebase/CalciDon/raw/main/CalciDon.apk) button or link above on your Android device.
+2. **Open Downloads**: Once downloaded, tap the completion notification or open your **Files** / **Downloads** app and locate `CalciDon.apk`.
+3. **Allow Installation from Unknown Sources** *(if prompted)*:
+   - When prompted that your device does not allow installing unknown apps from this source, tap **Settings**.
+   - Enable **"Allow from this source"** for your browser or file manager.
+4. **Install & Launch**:
+   - Tap **Install** and wait for the installation to finish.
+   - Tap **Open** to start using **CalciDon**!
+
+---
+
+### 💻 Option 2: Install via ADB (For Developers)
+
+With your Android device or emulator connected and **USB Debugging** enabled:
+
+```powershell
+# Install the APK to connected device
+adb install -r CalciDon.apk
+
+# Launch the app directly
+adb shell am start -n com.aistudio.calcidon.xklpqr/com.example.MainActivity
+```
+
+---
+
+### 🛠️ Option 3: Build from Source
+
+#### Prerequisites
 - **JDK 17+** (e.g. Microsoft OpenJDK 17 or Eclipse Adoptium Temurin 17)
 - **Android SDK** (API 24 to API 36)
 - **Android Studio** (Ladybug / Meerkat or later) or CLI tools
 
-### Build from Source
+#### Build Steps
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/abhisheksinghcodebase/CalciDon.git
@@ -101,20 +152,9 @@ CalciDon/
    ```
 
 3. **Locate Generated APK**:
-   The compiled APK will be located at:
-   - `CalciDon.apk` (Root directory)
-   - `app/build/outputs/apk/debug/app-debug.apk`
-
-### Install on Mobile via ADB
-With your Android device connected and **USB Debugging** enabled:
-```powershell
-adb install -r CalciDon.apk
-```
-
-To run directly on device:
-```powershell
-adb shell am start -n com.aistudio.calcidon.xklpqr/com.example.MainActivity
-```
+   The compiled APK is placed at:
+   - Root directory: `CalciDon.apk`
+   - Build output: `app/build/outputs/apk/debug/app-debug.apk`
 
 ---
 
